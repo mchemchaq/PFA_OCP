@@ -1,0 +1,11 @@
+# Use an official Nginx image as a base for serving static files
+FROM nginx:alpine
+
+# Copy your HTML, CSS, JS, and logo files into the Nginx public directory
+COPY ./frontend_web /usr/share/nginx/html
+
+# Expose port 80 for web traffic
+EXPOSE 80
+
+# Start Nginx when the container launches
+CMD ["nginx", "-g", "daemon off;"]

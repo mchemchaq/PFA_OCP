@@ -1,0 +1,196 @@
+body2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('background.jpeg'); /* Your image path */
+    background-size: cover;       /* Makes image cover entire page */
+    background-position: center;  /* Centers image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: hsl(0, 0%, 20%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #006400; /* Light cyan background */
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    color: #008000; /* OCP Green */
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #006400; /* Darker green */
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 5px;
+}
+
+button {
+    background-color: #008000; /* OCP Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    width: calc(100% - 18px); /* Adjust for padding */
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    border: 2px solid #008000; /* Green border for chat input */
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 80px); /* Adjust for send button */
+    font-size: 1em;
+}
+
+.status-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-message.success {
+    background-color: #e6ffe6; /* Light green */
+    color: #004d00;
+    border: 1px solid #008000;
+}
+
+.status-message.error {
+    background-color: #ffe6e6; /* Light red */
+    color: #cc0000;
+    border: 1px solid #ff0000;
+}
+
+.loading-indicator {
+    display: none; /* Hidden by default */
+    background-color: #f0fff0;
+    padding: 10px;
+    border-left: 5px solid #008000;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.data-display div {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.data-display strong {
+    color: #006400;
+}
+
+.extraction-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.extraction-results th, .extraction-results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.extraction-results th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #006400;
+}
+
+/* Chatbot specific styles */
+.chatbot-section {
+    margin-top: 40px;
+}
+
+.chat-messages {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    height: 300px; /* Fixed height for chat history */
+    overflow-y: auto; /* Scrollable */
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background-color: #f0fff0; /* Very light green for user messages */
+    margin-left: auto;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+
+.chat-message.assistant {
+    background-color: #e6ffe6; /* Light green for assistant messages */
+    margin-right: auto;
+    text-align: left;
+    border-bottom-left-radius: 0;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input-area input {
+    flex-grow: 1;
+}
+
+.chat-input-area button {
+    width: 70px;
+    margin-top: 0;
+}

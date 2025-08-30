@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCP AI Contract Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="ocp_logo.png" alt="OCP Logo" class="logo">
+            <h1>OCP AI Contract Assistant</h1>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload PDF Contract</h2>
+            <input type="file" id="pdfUpload" accept=".pdf">
+            <button id="extractButton">Extract Information</button>
+            <div id="uploadStatus" class="status-message"></div>
+        </section>
+
+        <section class="extraction-results">
+            <h2>Extracted Contract Information</h2>
+            <div id="loadingIndicator" class="loading-indicator">Processing...</div>
+            <div id="extractedData" class="data-display">
+                <!-- Extracted data will be inserted here by JavaScript -->
+            </div>
+            <button id="downloadCsvButton" style="display:none;">Download Results as CSV</button>
+        </section>
+
+        <section class="chatbot-section">
+            <h2>Contract Chatbot</h2>
+            <div id="chatMessages" class="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Ask a question about the contract...">
+                <button id="sendMessageButton">Send</button>
+            </div>
+            <div id="chatStatus" class="status-message"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
