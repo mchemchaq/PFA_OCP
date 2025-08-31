@@ -107,7 +107,6 @@ class FreeContractExtractor:
         extracted_data["Contract Number"] = self._regex_extract(full_text, r"CONTRAT\s*(?:N°|No)\s*([A-Z0-9/.-]+)")
         extracted_data["Total Amount"] = self._regex_extract(full_text, r"Montant\s+(?:HT|total)[^\d]*([\d\s.,]+)")
         extracted_data["Currency"] = self._regex_extract(full_text, r"\b(MAD|Dirhams?|DH|EUR|USD)\b")
-        # extracted_data["Date"] = self._regex_extract(full_text, r"\b(20\d{2})\b")
 
         answer = self.ask_question_from_text(full_text, "Où le contrat a-t-il été signé ou le lieu mentionné ?")
         if answer:

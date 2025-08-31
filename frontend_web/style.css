@@ -1,29 +1,44 @@
-body2 {
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('background.jpeg'); /* Your image path */
+    background-image: url('1.jpeg'); /* Your image path */
     background-size: cover;       /* Makes image cover entire page */
     background-position: center;  /* Centers image */
     background-repeat: no-repeat; /* Prevents tiling */
     color: hsl(0, 0%, 20%);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #006400; /* Light cyan background */
-    color: #333;
-}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.781);
+    backdrop-filter: blur(12px) saturate(180%);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.85);
 }
+
+/* Glassy container */
+.container1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.781); /* semi-transparent white */
+    backdrop-filter: blur(12px) saturate(180%); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.85); /* subtle border */
+}
+
+
+
+
 
 header {
     display: flex;
